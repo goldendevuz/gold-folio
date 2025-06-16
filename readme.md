@@ -1,4 +1,4 @@
-# Folio 2019
+# GoldFolio 2025
 
 ## Setup
 Download [Node.js](https://nodejs.org/en/download/).
