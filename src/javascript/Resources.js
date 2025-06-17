@@ -42,7 +42,7 @@ export default class Resources extends EventEmitter
             { name: 'introArrowKeyBase', source: './models/intro/arrowKey/base.glb' },
             { name: 'introArrowKeyCollision', source: './models/intro/arrowKey/collision.glb' },
 
-            { name: 'introBBase', source: './models/intro/b/base.glb' },
+            { name: 'introBBase', source: './models/intro/A.glb' },
             { name: 'introBCollision', source: './models/intro/b/collision.glb' },
 
             { name: 'introRBase', source: './models/intro/r/base.glb' },
