@@ -18,13 +18,11 @@ const About = () => {
             whileInView={{ filter: "blur(0)", opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            I'm <span className="text-primary">Azizbek Fayziyev</span>. I am{" "}
-            <span className="text-primary">17</span> years old and i live in{" "}
-            <span className="text-primary">Tashkent</span>.{" "}
-            <span className="text-primary">Front-End</span> Developer In{" "}
-            <span className="text-primary">React JS. </span>I like to learn more
-            and more about the programming, challenges that take me out of my
-            comfort zone are the best.
+            I'm <span className="text-primary">Yunusov Abdulmajid</span>. I am{" "}
+            <span className="text-primary">20</span> years old and a{" "}
+            <span className="text-primary">Backend</span> Developer. I like learning more
+            and more about programming—challenges that take me out of my comfort zone
+            are the best.
           </MotionP>
 
           <MotionP
@@ -33,11 +31,16 @@ const About = () => {
             transition={{ delay: 0.6 }}
             className="mt-8"
           >
-            I can prototyped and devloped{" "}
-            <span className="text-primary">landing Pages</span>,{" "}
-            <span className="text-primary">E-commerce</span>,{" "}
-            <span className="text-primary">Multi-Page Web Sites</span>,{" "}
-            <span className="text-primary">Web Applications</span> and more..
+            I make and maintain{" "}
+            <span className="text-primary">high-performance web applications</span>,{" "}
+            sometimes <span className="text-primary">Telegram bots</span>, and{" "}
+            <span className="text-primary">projects in other directions</span> using{" "}
+            <span className="text-primary">Python</span>,{" "}
+            <span className="text-primary">SQL</span>,{" "}
+            <span className="text-primary">Django</span>, and{" "}
+            <span className="text-primary">DRF</span>. I’ve completed several{" "}
+            <span className="text-primary">custom backend projects</span> and have some{" "}
+            <span className="text-primary">personal ideas in progress</span>.
           </MotionP>
         </div>
       </div>
@@ -58,13 +61,13 @@ const About = () => {
             transition={{ delay: 0.5 }}
           >
             <h5>
-              <i className="fa-solid fa-file-code text-primary text-4xl mr-4" />
-              Landing Pages
+              <i className="fa-solid fa-plug text-primary text-4xl mr-4" />
+              Backend APIs
             </h5>
 
             <h5 className="mt-20 -ml-1">
-              <i className="fa-solid fa-layer-group text-primary text-4xl mr-4" />
-              Web sites
+              <i className="fa-brands fa-telegram text-primary text-4xl mr-4" />
+              Telegram Bots
             </h5>
           </MotionDiv>
 
@@ -75,16 +78,17 @@ const About = () => {
             className="about-mobileMargin"
           >
             <h5>
-              <i className="fa-solid fa-store text-primary text-4xl mr-4" />
-              E-commerce
+              <i className="fa-solid fa-database text-primary text-4xl mr-4" />
+              Data Parsers
             </h5>
 
             <h5 className="mt-20">
-              <i className="fa-solid fa-window-maximize text-primary text-4xl mr-4" />
-              Web Applications
+              <i className="fa-solid fa-gears text-primary text-4xl mr-4" />
+              Automations
             </h5>
           </MotionDiv>
         </div>
+
 
         <MotionDiv
           initial={{ bottom: "50px" }}
@@ -130,11 +134,11 @@ const About = () => {
             whileInView={{ filter: "blur(0)", opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            <p className="text-2xl font-semibold">December 2021 - May 2022</p>
+            <p className="text-2xl font-semibold">June 2023 - August 2023</p>
             <h5 className="text-3xl text-primary my-2">
-              Front-end Programming
+              Computer Science Foundation
             </h5>
-            <h6 className="text-2xl text-lightGray">IT PARK</h6>
+            <h6 className="text-2xl text-lightGray">PDP Academy</h6>
           </MotionDiv>
 
           <MotionDiv
@@ -143,9 +147,9 @@ const About = () => {
             transition={{ delay: 0.6 }}
             className="mt-8"
           >
-            <p className="text-2xl font-semibold">DSeptember 2021 - November 2021</p>
-            <h5 className="text-3xl text-primary my-2">Computer Literacy</h5>
-            <h6 className="text-2xl text-lightGray">IT PARK</h6>
+            <p className="text-2xl font-semibold">September 2023 - August 2024</p>
+            <h5 className="text-3xl text-primary my-2">Python Backend Development</h5>
+            <h6 className="text-2xl text-lightGray">PDP Academy</h6>
           </MotionDiv>
         </div>
 
@@ -155,22 +159,7 @@ const About = () => {
             whileInView={{ scale: 1, filter: "blur(0)" }}
             transition={{ delay: 0.3 }}
           >
-            <h4 className="text-4xl mb-8 font-bold">Jobs</h4>
-          </MotionDiv>
-
-          <MotionDiv
-            initial={{ filter: "blur(10px)", opacity: 0 }}
-            whileInView={{ filter: "blur(0)", opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="mt-8"
-          >
-            <p className="text-2xl font-semibold">
-              Starting From March 2024...
-            </p>
-            <h5 className="text-3xl text-primary my-2">
-              Front-end - Freelancer
-            </h5>
-            <h6 className="text-2xl text-lightGray">Freelance</h6>
+            <h4 className="text-4xl mb-8 font-bold">Job Experience</h4>
           </MotionDiv>
 
           <MotionDiv
@@ -180,10 +169,10 @@ const About = () => {
             className="mt-8"
           >
             <p className="text-2xl font-semibold">
-              November 2023 - February 2024
+              Aprel 2025 - May 2025
             </p>
-            <h5 className="text-3xl text-primary my-2">Front-end Developer</h5>
-            <h6 className="text-2xl text-lightGray">Bettagraph</h6>
+            <h5 className="text-3xl text-primary my-2">Backend Developer</h5>
+            <h6 className="text-2xl text-lightGray">Madad IT Academy</h6>
           </MotionDiv>
         </div>
       </div>

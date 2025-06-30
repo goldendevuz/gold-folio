@@ -29,7 +29,7 @@ const Hero = () => {
           style={{ transform: "translate(-35%, -50%)" }}
           className="hero-img object-contain"
           src="/hero.png"
-          alt="hero - avancoder"
+          alt="hero - goldendev"
           width={400}
           height={400}
           priority
@@ -45,7 +45,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="hero-title relative text-5xl text-primary whitespace-nowrap font-extrabold">
-              Ãzizbek Fayziyev
+              Yunusov Abdulmajid
             </h1>
           </MotionDiv>
 
@@ -55,7 +55,7 @@ const Hero = () => {
             transition={{ delay: 0.3 }}
           >
             <h2 className="hero-subtitle relative text-6xl z-10 whitespace-nowrap font-bold">
-              Front-end Developer
+              Backend Developer
             </h2>
           </MotionDiv>
 
@@ -65,7 +65,7 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
           >
             <p className="hero-about text-xl text-[#8f8f8f] my-8">
-              Front-end developer focused on creating Web sites. I really like
+              Backend developer focused on creating Web sites. I really like
               different projects that solve real problems.
             </p>
           </MotionDiv>
@@ -76,7 +76,7 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="flex items-center gap-12"
           >
-            <Link href="/Azizbek Fayziyev - Resume.pdf">
+            <Link href="/YunusovAbdulmajid.pdf" target="_blank">
               <Button variant="secondary">
                 <i className="fa-solid fa-cloud-arrow-down" /> Download CV
               </Button>
@@ -95,7 +95,7 @@ const Hero = () => {
               animate={{ translateX: 0, opacity: 1 }}
               transition={{ delay: 1, type: "spring", stiffness: 300 }}
             >
-              <Link href="https://t.me/avancoder" target="_blank">
+              <Link href="https://t.me/avengerdev" target="_blank">
                 <i className="text-3xl bg-darkLight border border-darkLight hover:bg-transparent hover:text-primary transition-colors rounded-full p-3 fa-brands fa-telegram" />
               </Link>
             </MotionSpan>
@@ -105,7 +105,7 @@ const Hero = () => {
               animate={{ translateX: 0, opacity: 1 }}
               transition={{ delay: 0.9, type: "spring", stiffness: 300 }}
             >
-              <Link href="https://github.com/AzizbekFayziyev" target="_blank">
+              <Link href="https://github.com/goldendevuz" target="_blank">
                 <i className="text-3xl bg-darkLight border border-darkLight hover:bg-transparent hover:text-primary transition-colors rounded-full p-3 fa-brands fa-github" />
               </Link>
             </MotionSpan>
@@ -115,7 +115,7 @@ const Hero = () => {
               animate={{ translateX: 0, opacity: 1 }}
               transition={{ delay: 0.7, type: "spring", stiffness: 300 }}
             >
-              <Link href="https://www.instagram.com/avancoder/" target="_blank">
+              <Link href="https://www.instagram.com/yunusovabdulmajid" target="_blank">
                 <i className="text-3xl bg-darkLight border border-darkLight hover:bg-transparent hover:text-primary transition-colors rounded-full p-3 fa-brands fa-instagram" />
               </Link>
             </MotionSpan>
@@ -125,7 +125,7 @@ const Hero = () => {
               animate={{ translateX: 0, opacity: 1 }}
               transition={{ delay: 0.5, type: "spring", stiffness: 300 }}
             >
-              <Link href="mailto:fayziyev.dev@gmail.com" target="_blank">
+              <Link href="mailto:goldendevuz@gmail.com" target="_blank">
                 <i className="text-3xl bg-darkLight border border-darkLight hover:bg-transparent hover:text-primary transition-colors rounded-full p-3 fa-solid fa-at" />
               </Link>
             </MotionSpan>

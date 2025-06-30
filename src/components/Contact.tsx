@@ -18,7 +18,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const submit: SubmitHandler<ContactForm> = async (data) => {
-    const message = `AVANCODER PORTFOLIO \n\n Name: ${data.name} \n Email: ${data.email} \n Subject: ${data.subject} \n Message: ${data.message}`;
+    const message = `GOLDENDEV PORTFOLIO \n\n Name: ${data.name} \n Email: ${data.email} \n Subject: ${data.subject} \n Message: ${data.message}`;
 
     // fetch config settings
     const settings = {
@@ -58,130 +58,44 @@ const Contact = () => {
   };
 
   return (
-    <MotionSection
-      initial={{ scale: 0, opacity: 0 }}
-      whileInView={{ scale: 1, opacity: 1 }}
-      transition={{ delay: 0.2, ease: "anticipate" }}
-      className="wrapper flex justify-center py-28 rounded-[33px]"
-      id="contact"
-    >
-      <div className="contact-info relative bg-darkSecondary rounded-l-3xl p-10 px-20">
-        <h4 className="text-3xl font-semibold">CONTACT</h4>
+  <MotionSection
+    initial={{ scale: 0.95, opacity: 0 }}
+    whileInView={{ scale: 1, opacity: 1 }}
+    transition={{ delay: 0.2, duration: 0.6, ease: "anticipate" }}
+    className="wrapper flex justify-center py-28 px-4 md:px-16"
+    id="contact"
+  >
+    <div className="relative bg-[#1f1f1f] rounded-2xl border border-white/10 p-10 text-white w-full max-w-xl">
+      <h4 className="text-3xl font-bold mb-12 text-center">Get in Touch</h4>
 
-        <div className="contact-item absolute w-[270px] h-1 bg-light top-[55px] right-0" />
-        <div className="contact-item absolute w-[270px] h-1 bg-light bottom-[55px] left-0" />
-
-        <ul className="mt-8">
-          <li className="text-2xl mt-14 flex items-center">
-            <i className="text-3xl mr-4 fa-brands fa-telegram" /> @avancoder
-          </li>
-          <li className="text-2xl mt-14 flex items-center">
-            <i className="text-3xl mr-4 fa-solid fa-envelope" /> Fayziyev.dev@
-            <wbr />
-            gmail.com
-          </li>
-          <li className="text-2xl mt-14 flex items-center">
-            <i className="text-3xl mr-4 fa-solid fa-location-dot" /> Tashkent,
-            Uzbekistan
-          </li>
-        </ul>
-      </div>
-
-      <form
-        onSubmit={handleSubmit(submit)}
-        className="bg-darkPrimary rounded-r-3xl p-10 w-[600px]"
-      >
-        <div className="contact-group flex">
-          <div className="w-[80%] mr-1">
-            <label
-              className="block text-lg mb-1 text-lightGray"
-              htmlFor="contact_name"
-            >
-              Your name
-            </label>
-
-            <input
-              {...register("name")}
-              autoComplete="off"
-              className="bg-darkLight focus:bg-dark transition-all focus:shadow-inner outline-none rounded-md p-2"
-              type="text"
-              id="contact_name"
-              required
-              minLength={4}
-            />
+      <ul className="space-y-8 text-lg">
+        <li className="flex items-center gap-5">
+          <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+            <i className="fa-brands fa-telegram text-xl text-white" />
           </div>
+          <span>@avengerdev</span>
+        </li>
 
-          <div className="w-full">
-            <label
-              className="block text-lg mb-1 text-lightGray"
-              htmlFor="contact_email"
-            >
-              Your Email
-            </label>
-
-            <input
-              {...register("email")}
-              autoComplete="off"
-              className="bg-darkLight focus:bg-dark transition-all focus:shadow-inner outline-none rounded-md p-2 w-full"
-              type="email"
-              id="contact_email"
-              required
-            />
+        <li className="flex items-center gap-5">
+          <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+            <i className="fa-solid fa-envelope text-xl text-white" />
           </div>
-        </div>
+          <span>goldendevuz@gmail.com</span>
+        </li>
 
-        <div className="my-8">
-          <label
-            className="block text-lg mb-1 text-lightGray"
-            htmlFor="contact_subject"
-          >
-            Your subject
-          </label>
+        <li className="flex items-center gap-5">
+          <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center">
+            <i className="fa-solid fa-location-dot text-xl text-white" />
+          </div>
+          <span>Tashkent, Uzbekistan</span>
+        </li>
+      </ul>
+    </div>
+  </MotionSection>
+);
 
-          <input
-            {...register("subject")}
-            autoComplete="off"
-            className="bg-darkLight focus:bg-dark transition-all focus:shadow-inner outline-none rounded-md p-2 w-full"
-            type="text"
-            id="contact_subject"
-            minLength={8}
-            required
-          />
-        </div>
 
-        <div>
-          <label
-            className="block text-lg mb-1 text-lightGray"
-            htmlFor="contact_message"
-          >
-            Message
-          </label>
 
-          <textarea
-            {...register("message")}
-            className="bg-darkLight focus:bg-dark transition-all focus:shadow-inner outline-none rounded-md p-2 w-full"
-            id="contact_message"
-            cols={30}
-            rows={4}
-            minLength={15}
-            required
-          />
-        </div>
-
-        <div className="mt-4 flex justify-end">
-          <Button disabled={loading} size="small">
-            {loading ? (
-              "Sending..."
-            ) : (
-              <>
-                <i className="fa-regular fa-paper-plane" /> Send
-              </>
-            )}
-          </Button>
-        </div>
-      </form>
-    </MotionSection>
-  );
 };
 
 export default Contact;

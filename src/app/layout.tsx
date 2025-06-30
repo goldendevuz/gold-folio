@@ -13,21 +13,21 @@ const inter = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "AVANCODER | Azizbek Fayziyev",
-  authors: [{ name: "Azizbek Fayziyev", url: "https://t.me/avancoder" }],
+  title: "GOLDENDEV | Yunusov Abdulmajid",
+  authors: [{ name: "Yunusov Abdulmajid", url: "https://t.me/avengerdev" }],
   description:
-    "Front-end developer focused on creating Web sites. I really like different projects that solve real problems.",
+    "Backend developer focused on creating Web sites. I really like different projects that solve real problems.",
   keywords:
-    "Azizbek Fayziyev, avancoder, Fayziyev Azizbek, Fayziyev dev, Uzbek developer",
+    "Yunusov Abdulmajid, Goldendev, Avengerdev, Uzbek Developer, Shifu",
   robots: "index, follow",
   openGraph: {
     type: "website",
-    title: "AVANCODER | Azizbek Fayziyev",
+    title: "GOLDENDEV | Yunusov Abdulmajid",
     description:
-      "Front-end developer focused on creating Web sites. I really like different projects that solve real problems.",
-    siteName: "Azizbek Fayziyev",
+      "Backend developer focused on creating Web sites. I really like different projects that solve real problems.",
+    siteName: "Yunusov Abdulmajid",
   },
-  creator: "Azizbek Fayziyev",
+  creator: "Yunusov Abdulmajid",
 };
 
 export default function RootLayout({

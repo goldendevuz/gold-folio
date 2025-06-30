@@ -78,7 +78,7 @@ html {
 }
 
 .hero-subtitle::before {
-  content: "Front-end Developer";
+  content: "Backend Developer";
   @apply absolute top-[25%] left-[18px] text-transparent -z-10;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #373737;
