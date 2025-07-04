@@ -70,8 +70,13 @@ const Projects = () => {
                       </Link>
 
                       <Link target="_blank" href={project.live}>
-                        <Button size="small">Live Preview</Button>
+                        <Button size="small">
+                          {project.previewType === "cli" && "Run CLI"}
+                          {project.previewType === "api" && "Preview API"}
+                          {project.previewType === "web" && "Live Site"}
+                        </Button>
                       </Link>
+
                     </div>
                   </div>
                 </div>
